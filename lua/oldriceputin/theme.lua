@@ -11,24 +11,43 @@ local lush = require('lush')
 local hsl = lush.hsl
 
 -- colours
-local foreground = hsl(44,84,90)
+local foreground = hsl(41, 19, 84)
 local background = none
-local color0 = hsl(30,15,8)
-local color8 = hsl(0,0,27)
-local color1 = hsl(6,43,53)
-local color9 = hsl(5,57,50)
-local color2 = hsl(78,32,45)
-local color10 = hsl(69,46,50)
-local color3 = hsl(351,17,46)
-local color11 = hsl(47,69,53)
-local color4 = hsl(272,13,45)
-local color12 = hsl(352,33,48)
-local color5 = hsl(187,15,45)
-local color13 = hsl(74,37,68)
-local color6 = hsl(67,84,39)
-local color14 = hsl(137,46,60)
-local color7 = hsl(43,27,76)
-local color15 = hsl(28,30,70)
+local color0 = hsl(0, 0, 7)
+local color8 = hsl(0, 0, 33)
+local color1 = hsl(5, 49, 53)
+local color9 = hsl(9, 57, 51)
+local color2 = hsl(66, 44, 39)
+local color10 = hsl(69, 52, 50)
+local color3 = hsl(35, 14, 52)
+local color11 = hsl(47, 69, 53)
+local color4 = hsl(248, 14, 51)
+local color12 = hsl(342, 24, 48)
+local color5 = hsl(180, 20, 41)
+--local color13 = hsl(74, 37, 68)
+local color13 = hsl(70, 72, 63)
+local color6 = hsl(67, 84, 39)
+local color14 = hsl(137, 46, 60)
+local color7 = hsl(45, 8, 81)
+local color15 = hsl(60, 1, 73)
+-- local foreground = hsl(44,84,90)
+-- local background = none
+-- local color0 = hsl(30,15,8)
+-- local color8 = hsl(0,0,27)
+-- local color1 = hsl(6,43,53)
+-- local color9 = hsl(5,57,50)
+-- local color2 = hsl(78,32,45)
+-- local color10 = hsl(69,46,50)
+-- local color3 = hsl(351,17,46)
+-- local color11 = hsl(47,69,53)
+-- local color4 = hsl(272,13,45)
+-- local color12 = hsl(352,33,48)
+-- local color5 = hsl(187,15,45)
+-- local color13 = hsl(74,37,68)
+-- local color6 = hsl(67,84,39)
+-- local color14 = hsl(137,46,60)
+-- local color7 = hsl(43,27,76)
+-- local color15 = hsl(28,30,70)
 local color16 = hsl(0,0,0)
 local color235 = hsl(0,0,15)
 local color236 = hsl(0,0,19)
@@ -63,7 +82,7 @@ local theme = lush(function(injected_functions)
     SignColumn     { fg = color249, bg = color237 },
     IncSearch      { fg = color237, bg = color11 },
     LineNr         { fg = color244, bg = color237 },
-    CursorLineNr   { fg = color1, bg = color235 },
+    CursorLineNr   { fg = color13, bg = color235 },
     MatchParen     { fg = color7, bg = color3 },
     MoreMsg        { fg = color249, bg = background },
     NonText        { fg = color238, bg = background },
@@ -89,11 +108,11 @@ local theme = lush(function(injected_functions)
     Constant       { fg = color14, bg = background },
     String         { fg = color12, bg = background },
     Identifier     { fg = color9, bg = background },
-    Function       { fg = color13, bg = background },
+    Function       { fg = color7, bg = background },
     Statement      { fg = color255, bg = background },
     Conditional    { fg = color255, bg = background },
     Operator       { fg = color247, bg = background },
-    PreProc        { fg = color11, bg = background },
+    PreProc        { fg = color13, bg = background },
     Type           { fg = color247, bg = background },
     Special        { fg = color6, bg = background },
     Underlined     { gui = "underline" },
